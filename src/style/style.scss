@@ -1,0 +1,152 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Raleway;
+}
+
+section,
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 0 135px;
+}
+
+.header {
+  background-color: $base-green;
+  padding-top: 40px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    margin-left: 40px;
+
+    &:first-of-type {
+      margin: 0;
+    }
+  }
+  &__link {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: $base-white;
+
+    &:hover {
+      border-bottom: 1px dashed $base-orange;
+    }
+  }
+}
+
+.intro {
+  background-color: $base-green;
+  color: $base-white;
+  padding-bottom: 120px;
+  padding-top: 55px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__column {
+    &:nth-of-type(1) {
+      .intro__list {
+        margin-bottom: 100px;
+      }
+
+      .intro__item {
+        margin-top: 50px;
+        &:nth-of-type(1) {
+          margin-top: 0px;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 45px;
+      padding-right: 45px;
+
+      .intro__logo {
+        margin-bottom: 40px;
+        margin-top: 160px;
+      }
+
+      .intro__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 58px;
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .intro__desc {
+        max-width: 380px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+    &:nth-of-type(3) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .intro__next-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .intro__next-text {
+        color: $base-white;
+        writing-mode: tb-rl;
+        transform: rotate(180deg);
+        font-size: 14px;
+        line-height: 100%;
+        margin-top: 100px;
+      }
+
+      .intro__arrow {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.button {
+
+  cursor: pointer;
+  border: unset;
+  color: $base-white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 20px 50px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  &--orange {
+    background-color: $base-orange;
+    &:active {
+      background-color: $dark-orange;
+    }
+  }
+  &--green {
+    background-color: $base-green;
+  }
+}

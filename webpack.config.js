@@ -29,14 +29,16 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(jpe?g|png|gif|svg|ico)$/i,
-        use: [{
-            loader: 'file-loader',
+        test: /\.(jpe?g|png|gif|svg|ico|woff2?|ttf|otf|eot)$/i,
+        use: [
+          {
+            loader: "file-loader",
             options: {
-                name: '[name].[ext]',
-                outputPath: 'assets/'
-            }
-        }]
+              name: "[path][name].[ext]",
+              output: 'assets/'
+            },
+          },
+        ],
       },
     ],
   },

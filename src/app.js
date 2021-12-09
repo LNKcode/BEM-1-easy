@@ -1,0 +1,7 @@
+import './style/global.scss'
+import '../assets/logotype.svg'
+import '../assets/facebook.svg'
+import '../assets/instagram.svg'
+import '../assets/vk.svg'
+import '../assets/girl-2.png'
+import '../assets/girl-1.png'
