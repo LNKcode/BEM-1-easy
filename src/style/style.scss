@@ -154,11 +154,16 @@ footer {
 
 .teachers {
   display: flex;
-  justify-content: space-between;
   padding: 0 135px;
   background-color: $base-white;
 
- 
+  &__list {
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 
   &__title {
     font-family: Raleway;
@@ -178,5 +183,13 @@ footer {
     line-height: 120%;
     text-align: center;
     color: #353a5a;
+  }
+  &__text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
   }
 }
