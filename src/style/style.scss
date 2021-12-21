@@ -360,14 +360,13 @@ footer {
 .join-now {
   background-repeat: no-repeat;
   background-position: center;
-  background-size:auto;
+  background-size: auto;
   padding-top: 120px;
   padding-bottom: 120px;
 
   &__container {
     display: flex;
     justify-content: end;
-    
   }
 
   &__box {
@@ -389,5 +388,32 @@ footer {
     font-size: 16px;
     line-height: 150%;
     margin-bottom: 50px;
+  }
+}
+
+.footer {
+  background-color: $base-white;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    max-width: 270px;
+  }
+
+  &__navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__media-list {
+    display: flex;
+    
   }
 }
