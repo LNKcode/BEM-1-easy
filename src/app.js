@@ -21,3 +21,4 @@ import "../assets/photo/logotypeblack.svg";
 import "../assets/instagram-dark.svg";
 import "../assets/facebook-dark.svg";
 import "../assets/vk-dark.svg";
+import "./main.js"

@@ -395,6 +395,7 @@ footer {
   background-color: $base-white;
   &__container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -406,6 +407,8 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid rgba(53, 58, 90, 0.1);
+    border-bottom: 1px solid rgba(53, 58, 90, 0.1);
   }
 
   &__list {
@@ -414,6 +417,53 @@ footer {
   }
   &__media-list {
     display: flex;
-    
+  }
+
+  &__copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+  }
+  &__terms-of-policy {
+    display: flex;
+    p:first-child {
+      margin-right: 30px;
+    }
+  }
+}
+// модальное окно
+.modal {
+  display: none;
+  width: 300px;
+  height: 200px;
+  position: fixed;
+  background-color: $base-orange;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Raleway;
+  font-size: 25px;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    color: red;
+  }
+
+  &__item {
+    color: indigo;
+    margin-top: 10%;
+  }
+
+  &.visible {
+    display: block;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
   }
 }
